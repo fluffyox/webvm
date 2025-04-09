@@ -120,7 +120,7 @@ jobs:
       # 新增步骤：登录 Coding Docker 仓库
       - name: Login to Coding Docker Registry
         run: |
-          docker login -u ${{ webvm-1744177247803 }} -p ${{ c7ac45d3245fe3ba3ab4400e3843c375aada5495 }} e64-docker.pkg.coding.net
+          docker login -u webvm-1744177247803 -p c7ac45d3245fe3ba3ab4400e3843c375aada5495 e64-docker.pkg.coding.net
 
       # 新增步骤：重新打标签
       - name: Tag Docker image
